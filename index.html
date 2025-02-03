@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Lida Tan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading hidden" id="headingId">Lida Tan</h1>
+        <h1 class="heading_2 hidden" id="heading2Id">Will you be my valentine?</h1>
+        <img src="first.JPG" alt="Lida Tan Thinking" class="image hidden" id="myImage">
+        <div id="message-container"></div>
+        <div id="message-container2"></div>
+        <div id="message-container3"></div>
+        <div class="buttons hidden" id="butt">
+            <button class="yes" onclick="acceptValentine()" id="yesButton">YES</button>
+            <button class="no" onclick="declineValentine()" id="noButton">NO</button>
+        </div>
+        <div class="buttons" id="audio">
+            <button class="play" onclick="playAudio()" id="playButton">Play Music</button>
+            <button class="stop" onclick="stopAudio()" id="stopButton">Stop Music</button>
+        </div>
+    </div>
+
+    <audio id="myAudio" autoplay loop>
+        <source src="Song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
