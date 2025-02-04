@@ -3,6 +3,8 @@ function playAudio() {
     
     var audio = document.getElementById('myAudio');
     console.log("Audio element:", audio);
+
+    audio.muted = false;
     
     audio.play().then(() => {
       console.log("Audio is playing!");
@@ -26,7 +28,7 @@ function stopAudio() {
 
 function acceptValentine() {
     document.getElementById('headingId').innerText = 'To start our Valentine/Anniversary';
-    document.getElementById('heading2Id').innerText = 'I have booked a nail appointment for you';
+    document.getElementById('heading2Id').innerText = 'I have booked and paid for a nail appointment for you';
 
     yesButton = document.getElementById('yesButton').remove();
     noButton = document.getElementById('noButton')?.remove();
@@ -35,7 +37,7 @@ function acceptValentine() {
 
     document.getElementById('message-container').innerHTML = '<h3>Your nail appointment is on</h3>';
     document.getElementById('message-container2').innerHTML = '<h3>Feb 8th @ 12pm by Tinted_Tips</h3>';
-    document.getElementById('message-container3').innerHTML = '<h3>Address: 80 Merton Sreet</h3>';
+    document.getElementById('message-container3').innerHTML = '<h3>Address: 80 Merton Street</h3>';
 };
 
 
